@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1606c86f1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <title>TopApparel - Sample Ecommerce Website</title>
+  </head>
+  <body>
+    <p class="uppercase flex-center txt-xs sale m-color">
+      Further reduction up to 60% OFF
+    </p>
+
+    <div class="container">
+      <header class="header" id="home">
+        <div class="navigation flex-center-btwn">
+          <div class="nav__logo">
+            <a href="./index.html" class="txt-lg">TopApparel</a>
+          </div>
+          <div class="nav__list">
+            <ul class="flex-center uppercase">
+              <li><a href="#home" class="txt-sm">Home</a></li>
+              <li><a href="#products" class="txt-sm">Products</a></li>
+              <li><a href="#magazine" class="txt-sm">Magazine</a></li>
+              <li><a href="#contacts" class="txt-sm">Contact</a></li>
+            </ul>
+          </div>
+          <div class="nav__icons txt-md">
+            <label for=""><i class="fas fa-search"></i></label>
+            <input type="text" placeholder=" Search Products" results="0" />
+            <a href="./account.html"><i class="far fa-user"></i></a>
+            <a href="./cart.html"><i class="fas fa-shopping-bag"></i></a>
+          </div>
+        </div>
+        <div class="landing-page flex-center-around">
+          <div class="intro">
+            <div class="intro-wrapper">
+              <h1 class="txt-xxlg">
+                Spring Season <br />
+                SALE
+              </h1>
+              <p class="txt-md">
+                Spring arrivals upto <strong class="txt-lg">40% OFF</strong>
+              </p>
+              <a href="#products_grid" class="txt-md btn primary-btn"
+                >Explore now &#8594;</a
+              >
+            </div>
+          </div>
+          <div class="intro-image">
+            <img src="img/home.png" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <!-- GRID PRODUCTS PAGE -->
+      <section class="products light-bg" id="products_grid">
+        <div class="grid-wrapper">
+          <div class="card card1">
+            <div class="card-img-wrapper">
+              <img src="img/coats.jpg" alt="" />
+            </div>
+            <div class="card-info flex-center">
+              <div class="card-info-background dw-bg">
+                <h1 class="txt-lg uppercase light">Coats</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card2">
+            <div class="card-img-wrapper">
+              <img src="img/t-shirts.jpg" alt="" />
+            </div>
+            <div class="card-info flex-center">
+              <div class="card-info-background dw-bg">
+                <h1 class="txt-lg uppercase light">T-shirts</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card3">
+            <div class="card-img-wrapper">
+              <img src="img/jeans.jpg" alt="" />
+            </div>
+            <div class="card-info flex-center">
+              <div class="card-info-background dw-bg">
+                <h1 class="txt-lg uppercase light">Jeans</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card4">
+            <div class="card-img-wrapper">
+              <img src="img/sweatshirts.jpg" alt="" />
+            </div>
+            <div class="card-info flex-center">
+              <div class="card-info-background dw-bg">
+                <h1 class="txt-lg uppercase light">Sweatshirts</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card5">
+            <div class="card-img-wrapper">
+              <img src="img/shoes.jpg" alt="" />
+            </div>
+            <div class="card-info flex-center">
+              <div class="card-info-background dw-bg">
+                <h1 class="txt-lg uppercase light">Shoes</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#other_item" class="txt-sm see-all flex-center">
+          See all <span class="arrow"> &#10148;</span>
+        </a>
+      </section>
+
+      <!-- EXCLUSIVE PRODUCT PAGE -->
+      <section class="exclusive light-bg flex-center-around" id="other_item">
+        <div class="exclusive-img">
+          <img src="img/exclusive.png" alt="" />
+        </div>
+        <div class="exclusive-description">
+          <p class="txt-sm">Lorem ipsum dolor sit amet</p>
+          <h1 class="txt-xlg">FitterMe - smartwatch</h1>
+          <p class="txt-md">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+            adipisci illum, explicabo pariatur suscipit recusandae voluptates
+            quaerat rem iure beatae.
+          </p>
+          <a href="#" class="btn primary-btn txt-md">Buy now &#10148;</a>
+        </div>
+      </section>
+
+      <!-- SHOPPING PAGE -->
+      <section class="shop" id="products">
+        <div class="shop__nav light-bg">
+          <div class="shop__nav-wrapper">
+            <ul class="txt-sm flex-center">
+              <li><input type="checkbox" checked />All Products</li>
+              <li><input type="checkbox" />Featured</li>
+              <li><input type="checkbox" />New Release</li>
+              <li><input type="checkbox" />Trending Products</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="shop-window">
+          <div class="buttons-wrapper">
+            <div class="buttons">
+              <i class="light-bg fas fa-long-arrow-alt-left"></i>
+              <i class="light-bg fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <div class="item-wrapper flex-center">
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html"
+                  ><img src="img/items/item7.jpg" alt=""
+                /></a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item8.jpg" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item9.jpg" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item10.jpg" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item1.png" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item2.png" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item3.png" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item4.png" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item5.png" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+            <div class="item flex-center light-bg">
+              <div class="item-img-wrapper">
+                <a href="./product-page.html">
+                  <img src="img/items/item6.png" alt="" />
+                </a>
+              </div>
+              <div class="item-info">
+                <p class="">Lorem ipsum dolor sit amet.</p>
+                <p class="item__price"><strong>£49.99</strong></p>
+              </div>
+              <div class="add-to-cart">
+                <a href="#" class="btn primary-btn txt-sm"
+                  >Add to cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAGAZINE/ARTICLE PAGE -->
+      <section class="magazine light-bg" id="magazine">
+        <div class="magazine-intro">
+          <h1 class="txt-xlg">Magazine</h1>
+          <p class="txt-md italize">Read our Leisure Lifestyle Magazine</p>
+        </div>
+
+        <div class="magazine-wrapper flex-center-evenly">
+          <div class="magazines dg-bg">
+            <div class="magazines-img-wrapper">
+              <img src="img/magazine1.jpg" alt="" />
+            </div>
+            <div class="magazines-info flex-center">
+              <p class="txt-xs">Leisure Lifestyle</p>
+              <p class="txt-sm italize">
+                "Lorem ipsum dolor sit amet dolom consectetur adipisicing elit."
+              </p>
+              <a href="#" class="btn sub-btn">Read the full story &#10148;</a>
+            </div>
+          </div>
+
+          <div class="magazines dg-bg">
+            <div class="magazines-img-wrapper">
+              <img src="img/magazine2.jpg" alt="" />
+            </div>
+            <div class="magazines-info flex-center">
+              <p class="txt-xs">Leisure Lifestyle</p>
+              <p class="txt-sm italize">
+                "Lorem ipsum dolor sit amet dolom consectetur adipisicing elit."
+              </p>
+              <a href="#" class="btn sub-btn">Read the full story &#10148;</a>
+            </div>
+          </div>
+
+          <div class="magazines dg-bg">
+            <div class="magazines-img-wrapper">
+              <img src="img/magazine3.jpg" alt="" />
+            </div>
+            <div class="magazines-info flex-center">
+              <p class="txt-xs">Leisure Lifestyle</p>
+              <p class="txt-sm italize">
+                "Lorem ipsum dolor sit amet dolom consectetur adipisicing elit."
+              </p>
+              <a href="#" class="btn sub-btn">Read the full story &#10148;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRENDING BRANDS PAGE -->
+      <section class="trend">
+        <div class="trend-wrapper flex-center">
+          <div class="trend-intro txt-xlg">Trending brands</div>
+          <div class="trend-brands">
+            <img src="img/brands/nike.webp" alt="" />
+            <img src="img/brands/tommy.webp" alt="" />
+            <img src="img/brands/ellesse.webp" alt="" />
+            <img src="img/brands/dr-martens.webp" alt="" />
+            <img src="img/brands/carhartt.webp" alt="" />
+            <img src="img/brands/north-face.webp" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER PAGE -->
+      <section class="newsletter flex-center">
+        <div class="newsletter-intro">
+          <h1 class="txt-xlg">Subscribe to our newsletter</h1>
+          <p class="txt-md">for further 5% more discount</p>
+        </div>
+        <div class="newsletter-field">
+          <input type="email" placeholder="Enter your email" />
+        </div>
+      </section>
+
+      <!-- CONTACTS PAGE -->
+      <section class="contact s-color" id="contacts">
+        <div class="contact-wrapper flex-center-btwn fix-align">
+          <div class="col col-1">
+            <p class="txt-sm">Help & information</p>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Delivery & Returns</a></li>
+              <li><a href="#">Premier Delivery</a></li>
+              <li><a href="#">Student Discounts</a></li>
+            </ul>
+          </div>
+
+          <div class="col col-2">
+            <p class="txt-sm">About TopApparel</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers at TopApparel</a></li>
+              <li><a href="#">Cyber Security</a></li>
+            </ul>
+          </div>
+
+          <div class="col col-3">
+            <p class="txt-sm">More from TopApparel</p>
+            <ul>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Gift Vouchers</a></li>
+              <li><a href="#">Black Friday</a></li>
+            </ul>
+          </div>
+
+          <div class="socials">
+            <p class="txt-sm">Follow Us</p>
+
+            <ul class="flex-center">
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-snapchat-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER PAGE -->
+      <footer class="s-color">
+        <div class="bottom-footer flex-center-btwn">
+          <p class="copyright">Copyright 2021 &copy; Jianne Evangelista</p>
+          <a href="">Privacy & Cookies </a>
+          <a href="">Ts&Cs</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
