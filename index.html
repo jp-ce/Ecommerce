@@ -184,169 +184,415 @@
         <div class="shop-window">
           <div class="buttons-wrapper">
             <div class="buttons">
-              <i class="light-bg fas fa-long-arrow-alt-left"></i>
-              <i class="light-bg fas fa-long-arrow-alt-right"></i>
+              <i class="light-bg fas fa-long-arrow-alt-left" id="prevBtn"></i>
+              <i class="light-bg fas fa-long-arrow-alt-right" id="nextBtn"></i>
             </div>
           </div>
           <div class="item-wrapper flex-center">
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html"
-                  ><img src="img/items/item7.jpg" alt=""
-                /></a>
+            <!-- First SLIDE -->
+            <div class="display_products flex-center show_products" id="prod_1">
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html"
+                    ><img src="img/items/item7.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item8.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item9.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item8.jpg" alt="" />
-                </a>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item10.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item1.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item2.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item9.jpg" alt="" />
-                </a>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item3.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
-              </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item10.jpg" alt="" />
-                </a>
-              </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
-              </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item1.png" alt="" />
-                </a>
-              </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
-              </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item2.png" alt="" />
-                </a>
-              </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
-              </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item3.png" alt="" />
-                </a>
-              </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
-              </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item4.png" alt="" />
-                </a>
-              </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
-              </div>
-            </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item5.png" alt="" />
-                </a>
-              </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
-              </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item4.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
             </div>
-            <div class="item flex-center light-bg">
-              <div class="item-img-wrapper">
-                <a href="./product-page.html">
-                  <img src="img/items/item6.png" alt="" />
-                </a>
+
+            <!-- Second SLIDE -->
+            <div class="display_products flex-center hide_products" id="prod_2">
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item5.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="item-info">
-                <p class="">Lorem ipsum dolor sit amet.</p>
-                <p class="item__price"><strong>£49.99</strong></p>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item6.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
-              <div class="add-to-cart">
-                <a href="./cart.html" class="btn primary-btn txt-sm"
-                  >Add to cart <i class="fas fa-shopping-cart"></i
-                ></a>
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item11.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item12.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item13.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item14.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item15.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item16.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="display_products flex-center hide_products" id="prod_3">
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item17.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item18.jpg" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item19.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item20.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item21.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item22.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item23.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="item flex-center light-bg">
+                <div class="item-img-wrapper">
+                  <a href="./product-page.html">
+                    <img src="img/items/item24.png" alt="" />
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="">Lorem ipsum dolor sit amet.</p>
+                  <p class="item__price"><strong>£49.99</strong></p>
+                </div>
+                <div class="add-to-cart">
+                  <a href="./cart.html" class="btn primary-btn txt-sm"
+                    >Add to cart <i class="fas fa-shopping-cart"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
