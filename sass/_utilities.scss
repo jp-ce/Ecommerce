@@ -1,0 +1,247 @@
+// default tags
+h1 {
+  font-size: 2rem;
+}
+p,
+input {
+  font-size: 1.5rem;
+}
+
+a,
+label,
+li {
+  font-size: 1.2rem;
+}
+
+//wrapper / containers
+
+.container {
+  position: relative;
+  max-width: 1910px;
+  min-width: $all-devices-min-width;
+  overflow: hidden;
+  margin: auto;
+}
+
+.flex-center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-btwn {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-center-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fix-align {
+  text-align: left;
+  align-items: flex-start;
+}
+
+//Text styles
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italize {
+  font-style: italic;
+}
+
+.underline {
+  border-bottom: 1.5px solid $border-colour;
+  box-shadow: $secondary-box-shadow;
+}
+
+.txt-xxlg,
+.txt-xlg,
+.txt-lg {
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.txt-md,
+.txt-sm,
+.txt-xs {
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+}
+
+.txt-xxlg {
+  font-size: 6rem;
+  line-height: 1.3;
+}
+
+.txt-xlg {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+.txt-lg {
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+
+.txt-md {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.txt-sm {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.txt-xs {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+//text-colors
+.light {
+  color: $light-colour;
+}
+
+.m-fb {
+  color: $fb-main-colour;
+}
+
+//Backgrounds
+
+.m-color {
+  background-color: $main-colour;
+}
+
+.s-color {
+  background-color: $secondary-colour;
+}
+
+.white-bg {
+  background-color: $light-colour;
+}
+
+.light-bg {
+  background-color: #eee;
+}
+
+.dw-bg {
+  background-color: $dirty-white;
+}
+
+.dg-bg {
+  background-color: $dirty-green;
+}
+
+.m-fb-bg {
+  background-color: $fb-main-colour;
+}
+
+//Buttons
+
+.add-to-cart {
+  a {
+    background-color: $main-colour;
+    text-shadow: $text-shadow;
+
+    i {
+      padding-left: 0.5rem;
+      color: $light-colour;
+    }
+  }
+
+  &:hover {
+    i {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin: 2rem 0rem;
+
+  &.primary-btn {
+    border-radius: 1.8rem;
+    color: $light-colour;
+    background-color: $secondary-colour;
+    box-shadow: $box-shadow;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+      background-color: $main-colour;
+    }
+  }
+
+  &.sub-btn {
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    margin: 0.4rem 0rem;
+    color: $light-colour;
+    background-color: $secondary-colour;
+    box-shadow: $box-shadow;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+      background-color: $main-colour;
+    }
+  }
+  &.btn-log-in {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $main-colour;
+    }
+  }
+
+  &.btn-fb {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    i {
+      font-size: 2.2rem;
+      padding: 0 1rem;
+    }
+
+    &:hover {
+      background-color: $fb-hover-colour;
+    }
+  }
+
+  &.btn-checkout {
+    width: 20rem;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $main-colour;
+    }
+  }
+}
+
+//Misc
+.show-price {
+  display: none;
+}
+//Badges
