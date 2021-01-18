@@ -294,11 +294,19 @@ html {
     li {
       padding: 1rem 6rem;
     }
+
+    input.checkbox {
+      cursor: pointer;
+    }
   }
 
   .shop-window {
     position: relative;
     text-align: right;
+
+    .hide_buttons {
+      display: none;
+    }
 
     .buttons-wrapper {
       margin-right: 20rem;

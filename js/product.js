@@ -1,16 +1,9 @@
 //clicking an image change the main image into this
-const firstImg = document.querySelector("#img-1");
-const midImg = document.querySelector("#img-2");
-const lastImg = document.querySelector("#img-3");
+const firstImg = document.getElementById("img-1");
+const midImg = document.getElementById("img-2");
+const lastImg = document.getElementById("img-3");
+const curImg = document.getElementById("prodImg");
 
-firstImg.addEventListener("click", () => {
-  document.getElementById("prodImg").src = firstImg.src;
-});
-
-midImg.addEventListener("click", () => {
-  document.getElementById("prodImg").src = midImg.src;
-});
-
-lastImg.addEventListener("click", () => {
-  document.getElementById("prodImg").src = lastImg.src;
-});
+[firstImg, midImg, lastImg].map(ev => ev.addEventListener("click", function(){
+   curImg.src = this.src;
+}));

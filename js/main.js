@@ -5,14 +5,13 @@ let menuOpen = false;
 let container = document.querySelector(".container");
 
 menuBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    menuBtn.classList.add("open");
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove("open");
-    menuOpen = false;
-  }
+  toggleMenu();
 });
+
+const toggleMenu = () =>{
+   ["open", "close"].map(e => menuBtn.classList.toggle(e));
+   menuBtn.classList.contains(open) ? menuOpen = true : menuOpen = false;
+}
 
 //sidebar
 
@@ -24,9 +23,9 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
   } else {
     container.classList.add("change");
 
-    // OOnly applies when yoou click a link/ targets only the first child
+    // Only applies when yoou click a link/ targets only the first child
     document
-      .querySelectorAll(".menu-link, .social-media-link")
+      .querySelectorAll(".menu-link, .menu-icons")
       .forEach((el) => {
         el.addEventListener("click", () => {
           menuBtn.classList.remove("open");
@@ -37,44 +36,62 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
   }
 });
 
+
 //products
-const prevBtn = document.querySelector("#prevBtn");
-const nextBtn = document.querySelector("#nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
-nextBtn.addEventListener("click", () => {
-  if (document.getElementById("prod_1").classList.contains("show_products")) {
-    document.getElementById("prod_1").classList.remove("show_products");
-    document.getElementById("prod_1").classList.add("hide_products");
-    document.getElementById("prod_2").classList.add("show_products");
-  } else if (
-    document.getElementById("prod_2").classList.contains("show_products")
-  ) {
-    document.getElementById("prod_2").classList.remove("show_products");
-    document.getElementById("prod_2").classList.add("hide_products");
+const product_1 = document.getElementById("prod_1");
+const product_2 = document.getElementById("prod_2");
+const product_3 = document.getElementById("prod_3");
 
-    document.getElementById("prod_3").classList.add("show_products");
-  } else if (
-    document.getElementById("prod_3").classList.contains("show_products")
-  ) {
-    document.getElementById("prod_3").classList.remove("show_products");
-    document.getElementById("prod_3").classList.add("hide_products");
-    document.getElementById("prod_1").classList.add("show_products");
-  }
-});
 
-prevBtn.addEventListener("click", () => {
-  if (document.getElementById("prod_3").classList.contains("show_products")) {
-    document.getElementById("prod_3").classList.remove("show_products");
-    document.getElementById("prod_2").classList.add("show_products");
-  } else if (
-    document.getElementById("prod_2").classList.contains("show_products")
-  ) {
-    document.getElementById("prod_2").classList.remove("show_products");
-    document.getElementById("prod_1").classList.add("show_products");
-  } else if (
-    document.getElementById("prod_1").classList.contains("show_products")
-  ) {
-    document.getElementById("prod_1").classList.remove("show_products");
-    document.getElementById("prod_3").classList.add("show_products");
-  }
-});
+nextBtn.addEventListener("click", ()=>{
+   goForward();
+})
+
+prevBtn.addEventListener("click", ()=>{
+  goBackward();
+})
+
+
+const goForward = ()=>{
+   product_1.classList.contains("show_products") ? changeClass1() :
+    product_2.classList.contains("show_products") ? changeClass2() : changeClass3();
+
+}
+
+const goBackward = () => {
+   product_3.classList.contains("show_products") ? changeClass2() : 
+   product_2.classList.contains("show_products") ? changeClass1() : changeClass3();
+}
+
+// Clear but longer version
+// const goForward = ()=>{
+//    if(product_1.classList.contains("show_products")) return changeClass1();
+//    if(product_2.classList.contains("show_products")) return changeClass2();
+//    if(product_3.classList.contains("show_products")) return changeClass3();
+// }
+
+// const goBackward = () => {
+//    if(product_3.classList.contains("show_products")) return changeClass2()
+//    if(product_2.classList.contains("show_products")) return changeClass1()
+//    if(product_1.classList.contains("show_products")) return changeClass3()
+// }
+
+const changeClass1 = () => {
+   ["show_products" , "hide_products"].map( c => product_1.classList.toggle(c));
+   ["show_products" , "hide_products"].map( c => product_2.classList.toggle(c));
+}
+
+const changeClass2 = () => {
+   ["show_products" , "hide_products"].map( c => product_2.classList.toggle(c));
+   ["show_products" , "hide_products"].map( c => product_3.classList.toggle(c));
+}
+
+const changeClass3 = () => {
+   ["show_products" , "hide_products"].map( c => product_3.classList.toggle(c));
+   ["show_products" , "hide_products"].map( c => product_1.classList.toggle(c));
+}
+
+
