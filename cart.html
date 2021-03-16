@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/1606c86f1d.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="js/cart.js" type="module"></script>
     <link rel="stylesheet" href="css/styles.min.css" />
     <title>TopApparel - Sample Ecommerce Website</title>
   </head>
@@ -39,134 +40,12 @@
 
       <!-- Checkout Section -->
       <section class="checkout light-bg">
-        <div class="checkout-wrapper white-bg">
+        <div class="checkout-wrapper white-bg" id="basket">
           <div class="checkout-intro flex-center-btwn">
             <h1><i class="fas fa-shopping-basket"></i> Your Basket</h1>
             <p class="hide-price">Price</p>
           </div>
-          <div class="checkout-item">
-            <!-- Image -->
-            <div class="checkout-item-img">
-              <img src="img/items/item7.jpg" alt="" />
-            </div>
-            <!-- Info -->
-
-            <div class="checkout-item-info flex-center-btwn fix-align">
-              <div class="col-1">
-                <h1>Red puma - exercise t-shirt</h1>
-                <p>In stock</p>
-                <p>Eligible for FREE Shipping</p>
-                <h1 class="show-price">£49.99</h1>
-                <label for="">
-                  <ul>
-                    <li>
-                      <input type="checkbox" class="" /> This will be a gift
-                      <a href="" class="m-fb">Learn more</a>
-                    </li>
-                  </ul>
-                </label>
-                <label for="">Quantity</label>
-                <select name="" id="">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                </select>
-                <a href="">Delete</a>
-                <a href="">Save for later</a>
-                <a href="">See more related products</a>
-              </div>
-              <div class="col-2">
-                <p class="hide-price">£49.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="checkout-item">
-            <!-- Image -->
-            <div class="checkout-item-img">
-              <img src="img/items/item10.jpg" alt="" />
-            </div>
-            <!-- Info -->
-
-            <div class="checkout-item-info flex-center-btwn fix-align">
-              <div class="col-1">
-                <h1>Blue puma - exercise t-shirt</h1>
-                <p>In stock</p>
-                <p>Eligible for FREE Shipping</p>
-                <h1 class="show-price">£49.99</h1>
-
-                <label for="">
-                  <ul>
-                    <li>
-                      <input type="checkbox" class="" /> This will be a gift
-                      <a href="" class="m-fb">Learn more</a>
-                    </li>
-                  </ul>
-                </label>
-                <label for="">Quantity</label>
-                <select name="" id="">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                </select>
-                <a href="">Delete</a>
-                <a href="">Save for later</a>
-                <a href="">See more related products</a>
-              </div>
-              <div class="col-2">
-                <p class="hide-price">£49.99</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="checkout-item">
-            <!-- Image -->
-            <div class="checkout-item-img">
-              <img src="img/items/item18.jpg" alt="" />
-            </div>
-            <!-- Info -->
-
-            <div class="checkout-item-info flex-center-btwn fix-align">
-              <div class="col-1">
-                <h1>Black Nike Joggers - Comfy fit exercise</h1>
-                <p>In stock</p>
-                <p>Eligible for FREE Shipping</p>
-                <h1 class="show-price">£49.99</h1>
-
-                <label for="">
-                  <ul>
-                    <li>
-                      <input type="checkbox" class="" /> This will be a gift
-                      <a href="" class="m-fb">Learn more</a>
-                    </li>
-                  </ul>
-                </label>
-                <label for="">Quantity</label>
-                <select name="" id="">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                </select>
-                <ul>
-                  <a href="">Delete</a>
-                  <a href="">Save for later</a>
-                  <a href="">See more related products</a>
-                </ul>
-              </div>
-              <div class="col-2">
-                <p class="hide-price">£49.99</p>
-              </div>
-            </div>
-          </div>
+          <!-- Insert items here -->
         </div>
         <div class="purchase white-bg">
           <div class="total">

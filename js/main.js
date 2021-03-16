@@ -1,17 +1,26 @@
+import { categories, items, magazineItems, trendyBrands } from "./data.js";
 //hamburger menu
 
+const container = document.querySelector(".container");
 const menuBtn = document.querySelector(".menu-btn");
+const categoryGrid = document.querySelector(".grid-wrapper");
+const productsPage = document.getElementById("products-showcase");
+const featuredMagazines = document.getElementById("magazine-showcase");
+const brands = document.getElementById("brands");
+
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
 let menuOpen = false;
-let container = document.querySelector(".container");
 
 menuBtn.addEventListener("click", () => {
   toggleMenu();
 });
 
-const toggleMenu = () =>{
-   ["open", "close"].map(e => menuBtn.classList.toggle(e));
-   menuBtn.classList.contains(open) ? menuOpen = true : menuOpen = false;
-}
+const toggleMenu = () => {
+  ["open", "close"].map((e) => menuBtn.classList.toggle(e));
+  menuBtn.classList.contains(open) ? (menuOpen = true) : (menuOpen = false);
+};
 
 //sidebar
 
@@ -24,74 +33,106 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
     container.classList.add("change");
 
     // Only applies when yoou click a link/ targets only the first child
-    document
-      .querySelectorAll(".menu-link, .menu-icons")
-      .forEach((el) => {
-        el.addEventListener("click", () => {
-          menuBtn.classList.remove("open");
-          container.classList.remove("change");
-          menuOpen = false;
-        });
+    document.querySelectorAll(".menu-link, .menu-icons").forEach((el) => {
+      el.addEventListener("click", () => {
+        menuBtn.classList.remove("open");
+        container.classList.remove("change");
+        menuOpen = false;
       });
+    });
   }
 });
 
+//Grid Categories Section
 
-//products
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+categoryGrid.innerHTML = categories
+  .map((category) => {
+    const { id, img, description } = category;
 
-const product_1 = document.getElementById("prod_1");
-const product_2 = document.getElementById("prod_2");
-const product_3 = document.getElementById("prod_3");
+    return `<div class="card card${id}">
+  <div class="card-img-wrapper">
+    <img src=${img} alt=${description}/>
+  </div>
+  <div class="card-info flex-center">
+    <div class="card-info-background dw-bg">
+      <h1 class="txt-lg uppercase light">${description}</h1>
+    </div>
+  </div>
+</div>`;
+  })
+  .join("");
 
+//products Page
 
-nextBtn.addEventListener("click", ()=>{
-   goForward();
-})
+//events
+window.addEventListener("DOMContentLoaded", () => showItems(currentSlide));
 
-prevBtn.addEventListener("click", ()=>{
-  goBackward();
-})
+let currentSlide = 0;
 
+const showItems = (index) => {
+  productsPage.innerHTML = items[index]
+    .map((item) => {
+      const { image } = item;
 
-const goForward = ()=>{
-   product_1.classList.contains("show_products") ? changeClass1() :
-    product_2.classList.contains("show_products") ? changeClass2() : changeClass3();
+      return `<div class="item flex-center light-bg">
+      <div class="item-img-wrapper">
+        <a href="./product-page.html"
+          ><img src=${image} alt=""
+        /></a>
+      </div>
+      <div class="item-info">
+        <p class="">Lorem ipsum dolor sit amet.</p>
+        <p class="item__price"><strong>£49.99</strong></p>
+      </div>
+      <div class="add-to-cart">
+        <a href="./cart.html" class="btn primary-btn txt-sm"
+          >Add to cart <i class="fas fa-shopping-cart"></i
+        ></a>
+      </div>
+    </div>`;
+    })
+    .join("");
+};
 
-}
+prevBtn.addEventListener("click", () => {
+  currentSlide--;
+  if (currentSlide < 0) {
+    currentSlide = items.length - 1;
+  }
+  showItems(currentSlide);
+});
+nextBtn.addEventListener("click", () => {
+  currentSlide++;
+  if (currentSlide > items.length - 1) {
+    currentSlide = 0;
+  }
+  showItems(currentSlide);
+});
 
-const goBackward = () => {
-   product_3.classList.contains("show_products") ? changeClass2() : 
-   product_2.classList.contains("show_products") ? changeClass1() : changeClass3();
-}
+//magazines
+featuredMagazines.innerHTML = magazineItems
+  .map((item) => {
+    const { image, title } = item;
+    return `<div class="magazines dg-bg">
+  <div class="magazines-img-wrapper">
+    <img src=${image} alt=${title} />
+  </div>
+  <div class="magazines-info flex-center">
+    <p class="txt-xs">${title}</p>
+    <p class="txt-sm italize">
+      "Lorem ipsum dolor sit amet dolom consectetur adipisicing elit."
+    </p>
+    <a href="#" class="btn sub-btn">Read the full story &#10148;</a>
+  </div>
+</div>`;
+  })
+  .join("");
 
-// Clear but longer version
-// const goForward = ()=>{
-//    if(product_1.classList.contains("show_products")) return changeClass1();
-//    if(product_2.classList.contains("show_products")) return changeClass2();
-//    if(product_3.classList.contains("show_products")) return changeClass3();
-// }
-
-// const goBackward = () => {
-//    if(product_3.classList.contains("show_products")) return changeClass2()
-//    if(product_2.classList.contains("show_products")) return changeClass1()
-//    if(product_1.classList.contains("show_products")) return changeClass3()
-// }
-
-const changeClass1 = () => {
-   ["show_products" , "hide_products"].map( c => product_1.classList.toggle(c));
-   ["show_products" , "hide_products"].map( c => product_2.classList.toggle(c));
-}
-
-const changeClass2 = () => {
-   ["show_products" , "hide_products"].map( c => product_2.classList.toggle(c));
-   ["show_products" , "hide_products"].map( c => product_3.classList.toggle(c));
-}
-
-const changeClass3 = () => {
-   ["show_products" , "hide_products"].map( c => product_3.classList.toggle(c));
-   ["show_products" , "hide_products"].map( c => product_1.classList.toggle(c));
-}
-
-
+//brands
+brands.innerHTML = trendyBrands.map((brand) => {
+  const { image } = brand;
+  return `
+    <img src=${image} alt="" />
+    
+    `;
+});
