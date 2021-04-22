@@ -1,4 +1,4 @@
-# AnimeCatalogue
+# TopApparel
 
 ![Project Image](./img/Readme_image.PNG)
 
@@ -40,7 +40,7 @@ Nevertheless, this website is fully responsive to any device.
 - UI/UX
 - Responsive
 
-[Back To The Top](#animecatalogue)
+[Back To The Top](#topapparel)
 
 ---
 
@@ -61,4 +61,4 @@ Nevertheless, this website is fully responsive to any device.
 - linkedIn - [@jpev.dev](https://linkedin.com/in/jianneevangelista)
 - Website - [jp.ev](https://jpce.netlify.app/)
 
-[Back To The Top](#animecatalogue)
+[Back To The Top](#topapparel)
